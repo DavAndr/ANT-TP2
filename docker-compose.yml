@@ -18,7 +18,7 @@ services:
         ports:
           - "3307:3306"
         environment:
-            MYSQL_USER: 'david'
+            MYSQL_USER: 'user'
             MYSQL_PASSWORD: 'password'
             MYSQL_ROOT_PASSWORD: 'root'
             container_name: 'mysql'
