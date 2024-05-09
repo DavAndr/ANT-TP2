@@ -294,23 +294,9 @@ INSERT INTO adopcion (id_adoptante_fk, id_mascotas_fk, id_estado_fk, fecha) VALU
 (4, 4, 1, '2024-03-01'), 
 (5, 5, 2, '2024-3-01');
 
-INSERT INTO trabajo (nombre, descripcion, requisitos) VALUES ('Voluntario en eventos', 'Ayuda en la organización y desarrollo de eventos', 'Disponibilidad horaria'), ('Cuidador de animales', 'Responsable del cuidado diario de los animales', 'Experiencia previa con animales'), ('Recaudador de fondos', 'Encargado de buscar donaciones y patrocinios', 'Buenas habilidades de comunicación'), ('Coordinador de adopciones', 'Gestiona el proceso de adopciones', 'Conocimientos sobre adopciones responsables'), ('Veterinario', 'Profesional encargado de la salud de los animales', 'Titulo de veterinario');
-
-INSERT INTO voluntario (direccion, telefono, email, nacimiento, genero) VALUES ('Calle Mayor', '111222333', 'voluntario1@example.com', '1990-01-01', 'Masculino'), ('Av. Libertad', '444555666', 'voluntario2@example.com', '1985-03-15', 'Femenino'), ('Plaza Principal', '777888999', 'voluntario3@example.com', '2000-07-20', 'Masculino'), ('Callejón Secreto', '123456789', 'voluntario4@example.com', '1995-11-10', 'Femenino'), ('Paseo del Parque', '987654321', 'voluntario5@example.com', '1980-05-05', 'Masculino');
-
-INSERT INTO trabajo_voluntario (id_voluntario_fk, id_trabajo_fk, fecha_inicio, fecha_fin) VALUES (1, 1, '2022-03-01', '2022-03-31'), (2, 2, '2022-04-01', '2022-04-30'), (3, 3, '2022-05-01', '2022-05-31'), (4, 4, '2022-06-01', '2022-06-30'), (5, 5, '2022-07-01', '2022-07-31');
-
-INSERT INTO detalle_vol (id_voluntario_fk) VALUES (1), (2), (3), (4), (5);
-
-INSERT INTO clase (id_detalles_vol_fk, nombre, objetivos, fecha, hora) VALUES (1, 'Manejo de emergencias', 'Aprender a actuar en situaciones de emergencia', '2024-03-15', '09:00:00'), (2, 'Cuidados básicos de animales', 'Conocer las necesidades básicas de los animales', '2022-04-12', '10:00:00'), (3, 'Comportamiento animal', 'Entender el comportamiento de los animales', '2022-04-19', '11:00:00'), (4, 'Nutrición animal', 'Conocer las necesidades nutricionales de los animales', '2022-04-26', '12:00:00'), (5, 'Primeros auxilios veterinarios', 'Aprender a aplicar primeros auxilios a los animales', '2022-05-03', '13:00:00');
-
-INSERT INTO asistencia_clase (id_clase_fk, id_adopcion_fk, Asistencia, Detalles) VALUES (1, 1, 'Presente', 'Ninguno'), (2, 2, 'Ausente', 'Motivos personales'), (3, 3, 'Presente', 'Interés en el tema'), (4, 4, 'Ausente', 'Enfermedad'), (5, 5, 'Presente', 'Disponibilidad de tiempo');
-
-INSERT INTO patrocinadores (nombre) VALUES ('Empresa A'), ('Empresa B'), ('Empresa C'), ('Empresa D'), ('Empresa E');
-
-INSERT INTO detalle_pat (id_patrocinadores_fk) VALUES (1), (2), (3), (4), (5);
-
-INSERT INTO eventos (id_detalle_vol_fk, id_detalle_pat_fk, Nombre, descripcion) VALUES (1, 1, 'Evento solidario', 'Evento para recaudar fondos para animales abandonados'), (2, 2, 'Jornada de adopción', 'Evento para promover la adopción responsable de animales'), (3, 3, 'Charla educativa', 'Charla sobre cuidados y necesidades de los animales'), (4, 4, 'Concurso de mascotas', 'Concurso para mostrar la belleza y habilidades de las mascotas'), (5, 5, 'Campaña de esterilización', 'Campaña para concienciar sobre la importancia de esterilizar a las mascotas');
-
-
-
+INSERT INTO voluntario (direccion, telefono, email, nacimiento, genero) VALUES
+('123 Main St', '555-1234', 'johndoe@example.com', '1990-01-15', 'Hombre'),
+('456 Elm St', '555-5678', 'janedoe@example.com', '1985-07-25', 'Mujer'),
+('789 Oak St', '555-9876', 'alexsmith@example.com', '1995-03-10', 'Hombre'),
+('321 Pine St', '555-4321', 'sarahjones@example.com', '1980-11-30', 'Mujer'),
+('654 Maple St', '555-8765', 'mikebrown@example.com', '1992-09-20', 'Hombre');
